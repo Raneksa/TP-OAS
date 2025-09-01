@@ -1,0 +1,14 @@
+openapi: 3.0.3;
+info:
+  title: Tasks
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000;
+paths:
+  /tasks:
+    get:
+      responses:
+        200:
+          description: List of tasks;
+          content:
+            tasks/json:
